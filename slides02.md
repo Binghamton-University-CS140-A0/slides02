@@ -412,16 +412,16 @@ void method()
 
 - Objects in memory
 
-![](arrays1.jpg)
+![](https://www.cs.binghamton.edu/~lander/cs140/arrays1.jpg)
 
 - The names `thisDecade` and `averages` are *not stored* in memory, they are in the diagram to explain what the storage areas represent.
 - Similarly the name `length` and the indices 0, 1, 2, ... are not stored in the array objects, they indicate where things are stored at the offset locations (the length needs to be stored somewhere but the diagrams in the textbook do not agree that it is at the first position). (<a href="https://docs.oracle.com/javase/specs/jls/se11/html/jls-10.html" target="blank"> this link</a> states: "The array's length is available as a final instance variable length.")
 
-![](arrays2.jpg)
+![](https://www.cs.binghamton.edu/~lander/cs140/arrays2.jpg)
 
 - Arrays of elements that are not a primitive types, will only store references to objects stored elsewhere in the heap
 
-![](arrays3.jpg)
+![](https://www.cs.binghamton.edu/~lander/cs140/arrays3.jpg)
 
 **Accessing array elements**
 
@@ -441,7 +441,7 @@ Loan[] moreLoans;
 // Java will also accept Loan moreLoans[];
 ```
 
-![](arrays4.jpg)
+![](https://www.cs.binghamton.edu/~lander/cs140/arrays4.jpg)
 
 - The memory storage is undefined if `moreLoans` is a local variable 
 - The value is null if `moreLoans` is a field of some object 
@@ -461,7 +461,7 @@ moreLoans = loans;
 moreLoans = new Loan[]{new Loan(100, 3.0), new Loan(450, 2.5)};
 ```
 
-![](arrays5.jpg)
+![](https://www.cs.binghamton.edu/~lander/cs140/arrays5.jpg)
 
 **An array can be instantiated with only its specific length**
 
@@ -473,7 +473,7 @@ String[] example1 = new String[10];
 
 - each gives an array with 10 openings for Strings, indexed from 0 through 9 but each position is null until you put a value there
 
-![](arrays6.jpg)
+![](https://www.cs.binghamton.edu/~lander/cs140/arrays6.jpg)
 
 ```java
 long[] timeMillis = new long[15];
@@ -483,7 +483,7 @@ long[] timeMillis = new long[15];
 
 **Inserting a value, for example:**
 
-![](arrays7.jpg)
+![](https://www.cs.binghamton.edu/~lander/cs140/arrays7.jpg)
 
 ```java
 timeMillis[9] = System.currentTimeMillis();
@@ -493,7 +493,7 @@ timeMillis[9] = System.currentTimeMillis();
 
 **Strings are stored using 2 objects**
 
-![](arrays8.jpg)
+![](https://www.cs.binghamton.edu/~lander/cs140/arrays8.jpg)
 
 - We shall see later in the course the need for the hash code value of an object
 - In this example it is `31*31*'J' + 31*'a' + 'n'  = 74231`
@@ -1277,7 +1277,7 @@ System.out.println(grades);
 
 - An `ArrayList` object is an adapter for an array of Objects, see Section 16.2 
 
-![](arraylist1.jpg)
+![](https://www.cs.binghamton.edu/~lander/cs140/arraylist1.jpg)
 
 - Insertion at index value 3
 
@@ -1293,7 +1293,7 @@ System.out.println(grades);
 [17.5, 15.5, 12.75, 16.5, 19.25, 13.5, 11.25, 17.0]
 ```
 
-![](arraylist2.jpg)
+![](https://www.cs.binghamton.edu/~lander/cs140/arraylist2.jpg)
 
 **Reading files**
 
