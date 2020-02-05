@@ -674,7 +674,8 @@ public static int sum(int[] array)
 - using enhanced for loop
 
 ```java
-public static int sum(int[] array) {
+public static int sum(int[] array) 
+{
 	int value = 0;
 	if(array != null) 
 	{
@@ -739,7 +740,7 @@ public class NotesEx3
 	 */
 	public static Optional<Integer> sumOpt(int[] array) 
 	{
-		if(array != null) 
+		if(array != null && array.length > 0) 
 		{
 			int value = 0;
 			for (int i = 0; i < array.length; ++i) 
