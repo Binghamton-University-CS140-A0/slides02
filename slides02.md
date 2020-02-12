@@ -493,7 +493,7 @@ timeMillis[9] = System.currentTimeMillis();
 
 **Strings are stored using 2 objects**
 
-![](https://www.cs.binghamton.edu/~lander/cs140/CallStack2.JPG)
+![](https://www.cs.binghamton.edu/~lander/cs140/arrays8.JPG)
 
 - We shall see later in the course the need for the hash code value of an object
 - In this example it is `31*31*'J' + 31*'a' + 'n'  = 74231`
